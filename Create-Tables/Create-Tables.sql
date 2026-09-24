@@ -7,7 +7,7 @@ use SkyTrackAirlinedbs;
 
 
 create table AIRPORT(
-Airport_Id INT AUTO_INCREMENT PRIMARY KEY   ,
+Airport_Id INT AUTO_INCREMENT PRIMARY KEY,
  IATA_Code CHAR(3) NOT NULL UNIQUE,
  Name VARCHAR(50) NOT NULL,
  City VARCHAR(50) NOT NULL,
@@ -19,6 +19,7 @@ CREATE TABLE AIRCRAFT (
     Aircraft_Id INT AUTO_INCREMENT PRIMARY KEY,
     Registration_Number VARCHAR(20) NOT NULL UNIQUE,
     Manufacturer VARCHAR(50) NOT NULL,
+	Model VARCHAR(50) NOT NULL,
     Total_Seating_Capacity INT NOT NULL check (Total_Seating_Capacity > 0),
     Year_of_Manufacture INT NOT NULL
 );
