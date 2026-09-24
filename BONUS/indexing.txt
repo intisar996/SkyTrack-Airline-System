@@ -1,0 +1,38 @@
+
+1. What is a database index and what problem does it solve? Explain in your own words.:
+
+An index is a data structure that orders data in a table to help find rows faster. Before adding an index, when we search in a table we need to go through all the data in the table. After adding an index, it orders the data by alphabet or number, so we can find the row directly without checking every row.
+
+2. What is the difference between a Clustered Index and a Non-Clustered Index? How many
+clustered indexes can one table have, and why?
+
+
+Clustered index : orders the data in the same table by alphabet or number.
+ Non-clustered : index creates a new copy with pointers to the original place
+
+clustered indexes can one table have, and why?
+only one because it can be orders it can only ordered in one way
+
+
+3. What is a Unique Index? Identify at least two columns in the SkyTrack database where a
+unique index is naturally suitable.
+
+Unique Index:tools that does not allow two rows to have the same value in a columns .
+
+passenger id
+Email
+
+
+4. What is a Composite Index? Describe a situation in the airline system where combining two
+columns in one index would improve a query.
+
+
+Composite Index :
+is an index on two or more column 
+
+in airline : city,country if we often  search airport by City and Country together ,the composite index make it faster.
+
+
+
+
+
